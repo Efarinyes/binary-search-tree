@@ -1,3 +1,9 @@
+
+"""
+Learning Binary Search Tree in the course freeCodeCamp.org
+
+"""
+
 class TreeNode:
     def __init__(self, key):
         self.key = key
@@ -72,7 +78,10 @@ class BinarySearchTree:
             self._inorder_traversal(node.right, result)
 
 
+# Executing program
+
 bst = BinarySearchTree()
+
 nodes2 = [50, 30, 20, 40, 70, 60, 80]
 nodes = [10, 9, 7, 5, 2, 1, 3, 4, 8, 6]
 
@@ -84,3 +93,7 @@ print("Search for 5:", bst.search(5))
 bst.delete(5)
 print("Inorder traversal after deleting 5:", bst.inorder_traversal())
 print("Search for 5:", bst.search(5))
+print("Insert for 5:", bst.insert(5))
+print("Inorder traversal:", bst.inorder_traversal())
+print("Search for 5:", bst.search(5))
+
